@@ -1,23 +1,25 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Pare — Daily Focus Planner. Organiza tus tareas, rutinas y trámites y disfruta de cada día con más foco.">
+          content="DaySorted — Daily Planner & Life Organizer. Organiza tus tareas, rutinas y trámites y disfruta de cada día con más foco.">
 
     <meta name="theme-color"
           content="#0b0d0c">
 
-    <title>Pare — Daily Focus Planner</title>
+    <title>DaySorted — Daily Planner & Life Organizer</title>
 
     <link rel="icon"
           type="image/png"
           href="inicio.png">
+
 
     <style>
 
@@ -27,9 +29,11 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
+
 
         body {
             font-family:
@@ -46,6 +50,7 @@
             overflow-x: hidden;
         }
 
+
         a {
             color: inherit;
             text-decoration: none;
@@ -54,9 +59,10 @@
 
         /* =========================
            VARIABLES
-        ========================= */
+        ========================== */
 
         :root {
+
             --green: #20e56b;
             --green-dark: #13b950;
 
@@ -75,9 +81,10 @@
 
         /* =========================
            NAVBAR
-        ========================= */
+        ========================== */
 
         nav {
+
             position: fixed;
 
             top: 18px;
@@ -90,6 +97,7 @@
             padding: 12px 18px;
 
             display: flex;
+
             align-items: center;
             justify-content: space-between;
 
@@ -107,16 +115,21 @@
 
 
         .brand {
+
             display: flex;
+
             align-items: center;
+
             gap: 10px;
 
             font-weight: 700;
+
             font-size: 17px;
         }
 
 
         .brand-icon {
+
             width: 36px;
             height: 36px;
 
@@ -127,7 +140,9 @@
 
 
         .nav-links {
+
             display: flex;
+
             gap: 28px;
 
             color: var(--muted);
@@ -137,20 +152,24 @@
 
 
         .nav-links a {
-            transition: color .2s ease;
+
+            transition:
+                color .2s ease;
         }
 
 
         .nav-links a:hover {
+
             color: var(--green);
         }
 
 
         /* =========================
            HERO
-        ========================= */
+        ========================== */
 
         .hero {
+
             min-height: 100vh;
 
             max-width: var(--max-width);
@@ -173,11 +192,13 @@
 
 
         .hero-content {
+
             max-width: 560px;
         }
 
 
         .badge {
+
             display: inline-flex;
 
             align-items: center;
@@ -190,9 +211,11 @@
 
             border-radius: 50px;
 
-            background: rgba(32,229,107,0.1);
+            background:
+                rgba(32,229,107,0.1);
 
-            border: 1px solid
+            border:
+                1px solid
                 rgba(32,229,107,0.18);
 
             color: var(--green);
@@ -204,6 +227,7 @@
 
 
         .badge-dot {
+
             width: 7px;
             height: 7px;
 
@@ -217,6 +241,7 @@
 
 
         .hero h1 {
+
             font-size:
                 clamp(3.3rem, 6vw, 5.8rem);
 
@@ -229,11 +254,13 @@
 
 
         .hero h1 span {
+
             color: var(--green);
         }
 
 
         .hero-description {
+
             max-width: 500px;
 
             color: var(--muted);
@@ -248,9 +275,10 @@
 
         /* =========================
            APP STORE
-        ========================= */
+        ========================== */
 
         .app-store {
+
             display: inline-block;
 
             transition:
@@ -260,11 +288,13 @@
 
 
         .app-store img {
+
             height: 58px;
         }
 
 
         .app-store:hover {
+
             transform: translateY(-3px);
 
             opacity: .9;
@@ -273,9 +303,10 @@
 
         /* =========================
            HERO IMAGE
-        ========================= */
+        ========================== */
 
         .hero-image {
+
             display: flex;
 
             justify-content: center;
@@ -285,6 +316,7 @@
 
 
         .hero-image::before {
+
             content: "";
 
             position: absolute;
@@ -306,6 +338,7 @@
 
 
         .hero-image img {
+
             position: relative;
 
             width: min(390px, 85%);
@@ -324,6 +357,7 @@
 
 
         .hero-image img:hover {
+
             transform:
                 rotate(0deg)
                 translateY(-8px);
@@ -332,9 +366,10 @@
 
         /* =========================
            SECTION
-        ========================= */
+        ========================== */
 
         .section {
+
             max-width: var(--max-width);
 
             margin: auto;
@@ -345,6 +380,7 @@
 
 
         .section-header {
+
             text-align: center;
 
             max-width: 700px;
@@ -355,6 +391,7 @@
 
 
         .section-label {
+
             color: var(--green);
 
             font-size: 12px;
@@ -368,6 +405,7 @@
 
 
         .section-header h2 {
+
             font-size:
                 clamp(2.3rem, 4vw, 4rem);
 
@@ -381,6 +419,7 @@
 
 
         .section-header p {
+
             color: var(--muted);
 
             font-size: 17px;
@@ -391,9 +430,10 @@
 
         /* =========================
            FEATURES
-        ========================= */
+        ========================== */
 
         .features {
+
             display: grid;
 
             grid-template-columns:
@@ -404,6 +444,7 @@
 
 
         .feature {
+
             padding: 30px;
 
             min-height: 220px;
@@ -427,6 +468,7 @@
 
 
         .feature:hover {
+
             transform: translateY(-7px);
 
             border-color:
@@ -435,6 +477,7 @@
 
 
         .feature-icon {
+
             width: 50px;
             height: 50px;
 
@@ -457,6 +500,7 @@
 
 
         .feature h3 {
+
             font-size: 19px;
 
             margin-bottom: 10px;
@@ -464,6 +508,7 @@
 
 
         .feature p {
+
             color: var(--muted);
 
             line-height: 1.6;
@@ -474,9 +519,10 @@
 
         /* =========================
            SCREENSHOTS
-        ========================= */
+        ========================== */
 
         .screenshots {
+
             display: grid;
 
             grid-template-columns:
@@ -487,6 +533,7 @@
 
 
         .screenshot {
+
             background: #101311;
 
             padding: 9px;
@@ -507,6 +554,7 @@
 
 
         .screenshot:hover {
+
             transform: translateY(-10px);
 
             border-color:
@@ -515,6 +563,7 @@
 
 
         .screenshot img {
+
             display: block;
 
             width: 100%;
@@ -525,9 +574,10 @@
 
         /* =========================
            FEATURE SHOWCASE
-        ========================= */
+        ========================== */
 
         .showcase {
+
             max-width: var(--max-width);
 
             margin: 60px auto;
@@ -537,6 +587,7 @@
 
 
         .showcase-box {
+
             display: grid;
 
             grid-template-columns:
@@ -566,6 +617,7 @@
 
 
         .showcase-text span {
+
             color: var(--green);
 
             font-weight: 700;
@@ -579,6 +631,7 @@
 
 
         .showcase-text h2 {
+
             font-size:
                 clamp(2.3rem, 4vw, 3.7rem);
 
@@ -592,6 +645,7 @@
 
 
         .showcase-text p {
+
             color: var(--muted);
 
             line-height: 1.7;
@@ -601,11 +655,13 @@
 
 
         .showcase-image {
+
             text-align: center;
         }
 
 
         .showcase-image img {
+
             width: min(330px, 90%);
 
             border-radius: 35px;
@@ -620,9 +676,10 @@
 
         /* =========================
            CTA
-        ========================= */
+        ========================== */
 
         .cta {
+
             text-align: center;
 
             padding:
@@ -631,6 +688,7 @@
 
 
         .cta h2 {
+
             font-size:
                 clamp(2.7rem, 5vw, 5rem);
 
@@ -643,11 +701,13 @@
 
 
         .cta h2 span {
+
             color: var(--green);
         }
 
 
         .cta p {
+
             color: var(--muted);
 
             font-size: 17px;
@@ -658,9 +718,10 @@
 
         /* =========================
            FOOTER
-        ========================= */
+        ========================== */
 
         footer {
+
             padding:
                 35px 25px;
 
@@ -676,32 +737,37 @@
 
 
         footer a {
+
             color: var(--muted);
         }
 
 
         footer a:hover {
+
             color: var(--green);
         }
 
 
         .footer-links {
+
             margin-bottom: 10px;
         }
 
 
         /* =========================
            MOBILE
-        ========================= */
+        ========================== */
 
         @media(max-width: 850px) {
 
             .nav-links {
+
                 display: none;
             }
 
 
             .hero {
+
                 grid-template-columns: 1fr;
 
                 text-align: center;
@@ -713,34 +779,40 @@
 
 
             .hero-content {
+
                 margin: auto;
             }
 
 
             .hero-description {
+
                 margin-left: auto;
                 margin-right: auto;
             }
 
 
             .hero-image img {
+
                 width: min(350px, 82%);
             }
 
 
             .features {
+
                 grid-template-columns:
                     1fr 1fr;
             }
 
 
             .screenshots {
+
                 grid-template-columns:
                     1fr 1fr;
             }
 
 
             .showcase-box {
+
                 grid-template-columns:
                     1fr;
 
@@ -757,22 +829,26 @@
         @media(max-width: 550px) {
 
             .hero {
+
                 padding-left: 20px;
                 padding-right: 20px;
             }
 
 
             .hero h1 {
+
                 font-size: 3.5rem;
             }
 
 
             .hero-description {
+
                 font-size: 17px;
             }
 
 
             .section {
+
                 padding:
                     80px 20px;
             }
@@ -780,11 +856,13 @@
 
             .features,
             .screenshots {
+
                 grid-template-columns: 1fr;
             }
 
 
             .screenshot {
+
                 max-width: 420px;
 
                 margin: auto;
@@ -792,27 +870,32 @@
 
 
             .showcase {
+
                 padding: 20px;
             }
 
 
             .showcase-box {
+
                 border-radius: 30px;
             }
 
 
             .cta {
+
                 padding:
                     90px 20px;
             }
 
 
             .app-store img {
+
                 height: 52px;
             }
         }
 
     </style>
+
 </head>
 
 
@@ -830,9 +913,9 @@
             <img
                 src="inicio.png"
                 class="brand-icon"
-                alt="Pare">
+                alt="DaySorted">
 
-            <span>Pare</span>
+            <span>DaySorted</span>
 
         </a>
 
@@ -856,7 +939,6 @@
     </nav>
 
 
-
     <!-- =========================
          HERO
     ========================== -->
@@ -871,7 +953,7 @@
 
                 <span class="badge-dot"></span>
 
-                Daily Focus Planner
+                Daily Planner & Life Organizer
 
             </div>
 
@@ -879,6 +961,7 @@
             <h1>
 
                 Organiza tu día.
+
                 <br>
 
                 <span>Vive con más foco.</span>
@@ -888,7 +971,7 @@
 
             <p class="hero-description">
 
-                Pare reúne tus tareas, rutinas y
+                DaySorted reúne tus tareas, rutinas y
                 trámites en un único lugar para que
                 puedas centrarte en lo que realmente
                 importa.
@@ -898,8 +981,8 @@
 
             <!--
                 IMPORTANTE:
-                Cambia APP_STORE_URL por el enlace
-                real de Pare en App Store.
+                Sustituye APP_STORE_URL por el enlace
+                real de DaySorted en App Store.
             -->
 
             <a
@@ -910,7 +993,7 @@
 
                 <img
                     src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                    alt="Descargar en App Store">
+                    alt="Descargar DaySorted en App Store">
 
             </a>
 
@@ -918,12 +1001,11 @@
         </div>
 
 
-
         <div class="hero-image">
 
             <img
                 src="inicio.png"
-                alt="Pantalla principal de Pare">
+                alt="Pantalla principal de DaySorted">
 
         </div>
 
@@ -943,23 +1025,33 @@
 
         <div class="section-header">
 
+
             <div class="section-label">
+
                 Todo en un solo lugar
+
             </div>
 
 
             <h2>
+
                 Menos cosas que recordar.
+
                 <br>
+
                 Más tiempo para ti.
+
             </h2>
 
 
             <p>
-                Pare está pensado para ayudarte
+
+                DaySorted está pensado para ayudarte
                 a organizar las pequeñas cosas
                 que hacen que tu día funcione mejor.
+
             </p>
+
 
         </div>
 
@@ -968,119 +1060,149 @@
         <div class="features">
 
 
+            <!-- TAREAS -->
+
             <article class="feature">
 
                 <div class="feature-icon">
+
                     ✓
+
                 </div>
 
+
                 <h3>
+
                     Tareas diarias
+
                 </h3>
 
+
                 <p>
+
                     Organiza tus tareas y
                     empieza cada día sabiendo
                     qué tienes que hacer.
+
                 </p>
 
             </article>
 
 
 
-            <article class="feature">
-
-                <div class="feature-icon">
-                    ◷
-                </div>
-
-                <h3>
-                    Pomodoro
-                </h3>
-
-                <p>
-                    Divide tu tiempo en sesiones
-                    de concentración para trabajar
-                    sin distracciones.
-                </p>
-
-            </article>
-
-
+            <!-- TRÁMITES -->
 
             <article class="feature">
 
                 <div class="feature-icon">
+
                     ✓
+
                 </div>
 
+
                 <h3>
+
                     Trámites
+
                 </h3>
 
+
                 <p>
+
                     Guarda ITV, DNI, seguros y
                     otros trámites para que ninguna
                     fecha importante se te escape.
+
                 </p>
 
             </article>
 
 
 
+            <!-- RUTINAS -->
+
             <article class="feature">
 
                 <div class="feature-icon">
+
                     ☼
+
                 </div>
 
+
                 <h3>
+
                     Rutinas
+
                 </h3>
 
+
                 <p>
+
                     Crea rutinas de mañana y noche
                     y conviértelas en hábitos.
+
                 </p>
 
             </article>
 
 
 
+            <!-- FAMILIA -->
+
             <article class="feature">
 
                 <div class="feature-icon">
+
                     ♡
+
                 </div>
 
+
                 <h3>
+
                     Familia
+
                 </h3>
 
+
                 <p>
+
                     Crea diferentes perfiles para
                     organizar también las cosas
                     importantes de tu familia.
+
                 </p>
 
             </article>
 
 
 
+            <!-- EXPERIENCIA -->
+
             <article class="feature">
 
                 <div class="feature-icon">
+
                     ✦
+
                 </div>
 
+
                 <h3>
+
                     Una experiencia cuidada
+
                 </h3>
 
+
                 <p>
+
                     Una interfaz diseñada para
                     que organizarte sea sencillo,
                     rápido y agradable.
+
                 </p>
 
             </article>
@@ -1103,23 +1225,33 @@
 
         <div class="section-header">
 
+
             <div class="section-label">
-                Descubre Pare
+
+                Descubre DaySorted
+
             </div>
 
 
             <h2>
+
                 Tu día,
+
                 <br>
+
                 de un vistazo.
+
             </h2>
 
 
             <p>
+
                 Una interfaz clara para tener
                 siempre a mano aquello que
                 necesitas recordar.
+
             </p>
+
 
         </div>
 
@@ -1128,51 +1260,65 @@
         <div class="screenshots">
 
 
+            <!-- INICIO -->
+
             <div class="screenshot">
 
                 <img
                     src="inicio.png"
-                    alt="Inicio de Pare"
+                    alt="Inicio de DaySorted"
                     loading="lazy">
 
             </div>
 
+
+
+            <!-- RUTINAS -->
 
             <div class="screenshot">
 
                 <img
                     src="rutinas.png"
-                    alt="Rutinas de Pare"
+                    alt="Rutinas de DaySorted"
                     loading="lazy">
 
             </div>
 
+
+
+            <!-- TRÁMITES -->
 
             <div class="screenshot">
 
                 <img
                     src="tramites.png"
-                    alt="Trámites de Pare"
+                    alt="Trámites de DaySorted"
                     loading="lazy">
 
             </div>
 
+
+
+            <!-- AÑADIR TRÁMITE -->
 
             <div class="screenshot">
 
                 <img
                     src="anadir-tramite.png"
-                    alt="Añadir trámite en Pare"
+                    alt="Añadir trámite en DaySorted"
                     loading="lazy">
 
             </div>
 
 
+
+            <!-- PERFILES -->
+
             <div class="screenshot">
 
                 <img
                     src="Perfiles.png"
-                    alt="Perfiles familiares de Pare"
+                    alt="Perfiles familiares de DaySorted"
                     loading="lazy">
 
             </div>
@@ -1196,24 +1342,34 @@
 
             <div class="showcase-text">
 
+
                 <span>
+
                     Organización familiar
+
                 </span>
 
 
                 <h2>
+
                     Cada persona.
+
                     <br>
+
                     Su propio espacio.
+
                 </h2>
 
 
                 <p>
+
                     Crea perfiles independientes
                     y mantén organizadas las tareas,
                     rutinas y trámites de cada miembro
                     de la familia.
+
                 </p>
+
 
             </div>
 
@@ -1223,13 +1379,14 @@
 
                 <img
                     src="Perfiles.png"
-                    alt="Perfiles familiares en Pare"
+                    alt="Perfiles familiares en DaySorted"
                     loading="lazy">
 
             </div>
 
 
         </div>
+
 
     </section>
 
@@ -1245,6 +1402,7 @@
         <h2>
 
             Haz que cada día
+
             <br>
 
             <span>cuente.</span>
@@ -1253,7 +1411,10 @@
 
 
         <p>
-            Descubre Pare — Daily Focus Planner.
+
+            Descubre DaySorted —
+            Daily Planner & Life Organizer.
+
         </p>
 
 
@@ -1265,7 +1426,7 @@
 
             <img
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="Descargar en App Store">
+                alt="Descargar DaySorted en App Store">
 
         </a>
 
@@ -1283,21 +1444,32 @@
 
         <div class="footer-links">
 
+
             <a href="Politica-Privacidad.html">
+
                 Política de Privacidad
+
             </a>
+
 
             &nbsp; · &nbsp;
 
+
             <a href="mailto:soportecazalla@gmail.com">
+
                 Soporte
+
             </a>
+
 
         </div>
 
 
         <div>
-            © 2026 Pare — Daily Focus Planner
+
+            © 2026 DaySorted —
+            Daily Planner & Life Organizer
+
         </div>
 
 
@@ -1305,5 +1477,5 @@
 
 
 </body>
+
 </html>
-```
